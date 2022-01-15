@@ -1,0 +1,57 @@
+:root {
+    --backgroundimage: url("1a.jfif");
+	--off-color: #00B2DB;
+	--on-color: #00415F;
+	--backgrounds: #BEBEBE80;
+	--brightred: #FF4C4C;
+	--salmon: #D57561;
+	--lightgray: #BBBBBB;
+	--darkgray: #999999;
+	--white: #FFFFFF
+	
+}
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+.mainpage{
+	background-image:  var(--backgroundimage);
+	background-color: var(--backgrounds);
+}
+
+
+
+.button{
+	background-color: var(--off-color);
+	
+	
+}
+.button:value(1){
+	background-color: var(--on-color);
+	
+}
+
+
+.mute{
+	background-color: var(--salmon);
+	
+}
+
+.mute:value(1){
+	background-color: var(--brightred);
+	
+}
+
+.numberpad{
+	background-color: var(--lightgray);
+	border-width:1px;
+	border-radius: 100%;
+	font-size: 50vh;
+	text-align: center;
+}
+
+.numberpad:value(1) {
+	background-color: var (--darkgray);
+	
+}
