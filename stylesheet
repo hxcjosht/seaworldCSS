@@ -1,32 +1,129 @@
+/*@ import url("colorsheet");
+*/
+
+
+
 :root {
-    --backgroundimage: url("1a.jfif");
+    	--backgroundimage: url("1a.jfif");
 	--off-color: #00B2DB;
 	--on-color: #00415F;
-	--backgrounds: #BEBEBE80;
+	--backgrounds: #f4fcff;
 	--brightred: #FF4C4C;
 	--salmon: #D57561;
-	--lightgray: #BBBBBB;
-	--darkgray: #999999;
+	--numberpadopen: #BBBBBB;
+	--numberpadpress: #999999;
 	--white: #FFFFFF
 	
 }
 @font-face {
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+	
+src: url(fonts/Montserrat-Regular.ttf);
 }
+
+@font-face {
+  font-family: "Sansita One";
+  src: url(Sansita-Regular.ttf);
+  
+}
+
 
 .mainpage{
 	background-image:  var(--backgroundimage);
-	background-color: var(--backgrounds);
+	background-color: var(--white);
+}
+
+.font{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 30 rem;
+	
 }
 
 
+
+.seafont{
+        font-family: "Sansita One";
+	font-weight: 400;
+	font-size: 80 rem;
+}
 
 .button{
-	background-color: var(--off-color);
+	/*background-color: var(--off-color);*/
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	display: block;
+    padding: 13px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #00415f;
+    border: solid 3px #c7e7f6;
+    border-bottom: 0;
+    background-color: #f4fcff;
+    font-size: 40px;
+    font-size: 30 rem;
+}
+
+.button:pressed{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	display: block;
+    padding: 13px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #00415f;
+    border: solid 3px #c7e7f6;
+    border-bottom: 0;
+    background-color: #f4fcff;
+    font-size: 40px;
+    font-size: 30 rem;
 	
 	
 }
+
+.button2{
+	background: rgb(221, 221, 221);
+    color: rgb(39, 39, 39);
+    padding: 10px;
+    position: relative;
+    font-size: 30 rem;
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+   
+    border-radius: 10px;
+   
+	
+}
+.button2:pressed{
+	background: #BFE2F9;
+    color:rgb(39, 39, 39);
+    padding: 10px;
+    position: relative;
+    font-size: 30 rem;
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+    border-radius: 10px;
+	
+}
+
+.button2:value(1){
+	background: linear-gradient(to bottom, #00d461 0%, #00ab4e 85%);
+	color:rgb(39, 39, 39);
+	 padding: 10px;
+    position: relative;
+    font-size: 30 rem;
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+
+
+
+
 .button:value(1){
 	background-color: var(--on-color);
 	
@@ -34,17 +131,31 @@
 
 
 .mute{
-	background-color: var(--salmon);
+	background: linear-gradient(to bottom, #00d461 0%, #00ab4e 85%);
+	padding: 10px;
+    position: relative;
+    font-size: 30 rem;
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+    border-radius: 10px;
 	
 }
 
 .mute:value(1){
-	background-color: var(--brightred);
+	background: linear-gradient(to bottom, #D4002B 0%, #AB0016 85%));
+	padding: 10px;
+    position: relative;
+    font-size: 30 rem;
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+    border-radius: 10px;
 	
 }
 
 .numberpad{
-	background-color: var(--lightgray);
+	background-color: var(--numberpadopen);
 	border-width:1px;
 	border-radius: 100%;
 	font-size: 50vh;
@@ -52,6 +163,93 @@
 }
 
 .numberpad:value(1) {
-	background-color: var (--darkgray);
+	background-color: var (--numberpadpress);
 	
+}
+
+.brownbackground{
+	background-color: hsl(0, 0%, 90%)
+	
+}
+
+.eobutton{
+	background-image: url("sea.jpg");
+
+}
+
+.eobutton:value(1){
+	background-image: url("eodj.PNG");
+
+}
+
+
+.song1button{
+font-family: "Sansita One";
+	font-weight: 400;
+	display: block;
+    color: #FFFFFF;
+    background-color: #DD56DD;
+    font-size: 100px;
+    border-radius:30px;
+    	
+
+}
+
+.song2button{
+font-family: "Sansita One";
+	font-weight: 400;
+	display: block;
+    color: #FFFFFF;
+    background-color: #DD9A56;
+    font-size: 100px;
+   border-radius:30px;	
+
+}
+
+.song3button{
+font-family: "Sansita One";
+	font-weight: 400;
+	display: block;
+    color: #FFFFFF;
+    background-color: #569ADD;
+    font-size: 100px;
+    border-radius:30px;	
+
+}
+
+.fadergeneral{
+	background:
+	background-color:
+	border:
+	border-width:
+	border-color:
+	border-radius:
+	color:
+	content:
+	font-family:
+	font-size:
+	opacity:
+	text-align:
+	text-transform:
+	vertical-align:
+	
+
+}
+
+.dropdownmenu{
+font-family: "Sansita One";
+	font-weight: 400;
+	font-size: 80 rem;
+border-radius:30px;
+
+}
+
+.eofader{
+	border:2px;
+	border-width:
+	border-color:#FFFFFF;
+	border-radius:15px;
+	opacity:70%;
+	
+
 }
